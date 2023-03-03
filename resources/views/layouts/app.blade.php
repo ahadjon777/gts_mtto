@@ -20,8 +20,8 @@
 
             <!-- Page Heading -->
             @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <header class="bg-white dark:bg-gray-500 shadow">
+                    <div class="container p-3">
                         {{ $header }}
                     </div>
                 </header>
@@ -31,6 +31,14 @@
             <main>
                 {{ $slot }}
             </main>
+        </div>
+        <div style="bottom: 0; display: flex; align-items: center; justify-content: center; padding: 10px 0; position: fixed; left: 0; width: 100%;">
+            ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            , made with ❤️ by
+            <a href="#" target="_blank" class="footer-link fw-bolder">Ahadjon</a>
         </div>
     </body>
 </html>
